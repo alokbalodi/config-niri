@@ -1,0 +1,119 @@
+// =====================================================
+// Browsers
+// =====================================================
+
+window-rule {
+    match app-id="firefox"
+
+    open-on-workspace "browser"
+
+    default-column-width {
+        proportion 0.9
+    }
+}
+
+window-rule {
+    match app-id="brave-origin-nightly"
+
+    open-on-workspace "browser"
+
+    default-column-width {
+        proportion 0.9
+    }
+}
+
+// =====================================================
+// File Managers
+// =====================================================
+
+window-rule {
+    match app-id="thunar"
+
+    open-on-workspace "files"
+
+    default-column-width {
+        proportion 0.5
+    }
+}
+
+window-rule {
+    match app-id="yazi"
+
+    open-on-workspace "files"
+
+    default-column-width {
+        proportion 0.5
+    }
+}
+
+window-rule {
+    match app-id="yazi-root"
+
+    open-on-workspace "files"
+
+    default-column-width {
+        proportion 0.5
+    }
+}
+
+// =====================================================
+// Terminal
+// =====================================================
+
+window-rule {
+    match app-id="kitty"
+
+    open-on-workspace "terminal"
+
+    default-column-width {
+        proportion 0.7
+    }
+}
+
+// =====================================================
+// Media
+// =====================================================
+
+window-rule {
+    match app-id="Spotify"
+
+    open-on-workspace "media"
+
+    default-column-width {
+        proportion 0.7
+    }
+}
+
+window-rule {
+    match app-id="mpv"
+
+    open-on-workspace "media"
+
+    default-column-width {
+        proportion 0.7
+    }
+}
+
+window-rule {
+    match app-id="io.github.celluloid_player.Celluloid"
+
+    open-on-workspace "media"
+
+    default-column-width {
+        proportion 0.7
+    }
+}
+
+// =====================================================
+// Downloads
+// =====================================================
+
+window-rule {
+    match app-id="com-abdownloadmanager-desktop-AppKt"
+
+    open-on-workspace "downloads"
+
+    default-column-width {
+        proportion 0.7
+    }
+}

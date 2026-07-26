@@ -1,0 +1,101 @@
+binds {
+
+    //
+    // Workspace Selection
+    //
+
+    // Workspace 1 - Browsers
+    Mod+1 { focus-workspace 1; }
+
+    // Workspace 2 - File Managers
+    Mod+2 { focus-workspace 2; }
+
+    // Workspace 3
+    Mod+3 { focus-workspace 3; }
+
+    // Workspace 4 - Media
+    Mod+4 { focus-workspace 4; }
+
+    // Workspace 5
+    Mod+5 { focus-workspace 5; }
+
+    // Workspace 6
+    Mod+6 { focus-workspace 6; }
+
+    // Workspace 7
+    Mod+7 { focus-workspace 7; }
+
+    // Workspace 8
+    Mod+8 { focus-workspace 8; }
+
+    // Workspace 9
+    Mod+9 { focus-workspace 9; }
+
+    // Workspace 10 - Terminal
+    Mod+0 { focus-workspace 10; }
+
+    //
+    // Workspace Movement
+    //
+
+    // Move Window to Workspace 1
+    Mod+Shift+1 { move-column-to-workspace 1; }
+
+    // Move Window to Workspace 2
+    Mod+Shift+2 { move-column-to-workspace 2; }
+
+    // Move Window to Workspace 3
+    Mod+Shift+3 { move-column-to-workspace 3; }
+
+    // Move Window to Workspace 4
+    Mod+Shift+4 { move-column-to-workspace 4; }
+
+    // Move Window to Workspace 5
+    Mod+Shift+5 { move-column-to-workspace 5; }
+
+    // Move Window to Workspace 6
+    Mod+Shift+6 { move-column-to-workspace 6; }
+
+    // Move Window to Workspace 7
+    Mod+Shift+7 { move-column-to-workspace 7; }
+
+    // Move Window to Workspace 8
+    Mod+Shift+8 { move-column-to-workspace 8; }
+
+    // Move Window to Workspace 9
+    Mod+Shift+9 { move-column-to-workspace 9; }
+
+    // Move Window to Workspace 10
+    Mod+Shift+0 { move-column-to-workspace 10; }
+
+    // Move Window to Terminal Workspace
+    Mod+Shift+Grave {
+        move-column-to-workspace "terminal";
+    }
+
+    //
+    // Workspace Navigation
+    //
+
+    // Overview
+    Mod+Escape { toggle-overview; }
+
+    // Previous Workspace
+    Mod+WheelScrollUp cooldown-ms=150 {
+        focus-workspace-up;
+    }
+
+    // Next Workspace
+    Mod+WheelScrollDown cooldown-ms=150 {
+        focus-workspace-down;
+    }
+
+    //
+    // Displays
+    //
+
+    // Monitor Menu
+    Mod+Shift+F1 {
+        spawn "~/.config/niri/scripts/monitor/monitor-menu.sh";
+    }
+}

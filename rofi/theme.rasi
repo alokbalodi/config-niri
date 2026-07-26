@@ -1,0 +1,68 @@
+* {
+    background-color: transparent;
+    text-color: #cdd6f4;
+    border-color: rgba(137, 180, 250, 0.7);
+}
+
+window {
+    width: 700px;
+
+    background-color: rgba(17, 17, 27, 0.9);
+
+    border: 1px;
+    border-radius: 8px;
+
+    padding: 10px;
+}
+
+inputbar {
+    children: [prompt, entry];
+
+    background-color: rgba(245, 194, 231, 0.08);
+
+    border-radius: 6px;
+
+    padding: 8px 10px;
+
+    margin: 0px 0px 8px 0px;
+}
+
+prompt {
+    enabled: true;
+    text-color: #89b4fa;
+}
+
+entry {
+    placeholder: "Search...";
+    placeholder-color: #6c7086;
+}
+
+listview {
+    lines: 8;
+    spacing: 4px;
+    scrollbar: false;
+}
+
+element {
+    padding: 8px 10px;
+
+    border-radius: 6px;
+
+    background-color: transparent;
+}
+
+element normal normal {
+    text-color: #cdd6f4;
+}
+
+element selected normal {
+    background-color: rgba(137, 180, 250, 0.15);
+
+    text-color: #89b4fa;
+}
+
+element hover {
+    background-color: rgba(137, 180, 250, 0.08);
+
+    text-color: #cdd6f4;
+}

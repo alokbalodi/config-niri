@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+cliphist list |
+  rofi \
+    -dmenu \
+    -i \
+    -p "Clipboard" |
+  cliphist decode |
+  wl-copy

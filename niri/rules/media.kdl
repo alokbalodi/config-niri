@@ -1,0 +1,39 @@
+// =====================================================
+// Firefox Picture-in-Picture
+// =====================================================
+
+window-rule {
+    match app-id="firefox" title=r"^Picture-in-Picture$"
+
+    open-floating true
+
+    default-column-width {
+        fixed 375
+    }
+
+    default-window-height {
+        fixed 210
+    }
+
+    default-floating-position x=15 y=15 relative-to="bottom-right"
+}
+
+// =====================================================
+// Chromium Picture-in-Picture
+// =====================================================
+
+window-rule {
+    match title=r"^Picture-in-picture$"
+
+    open-floating true
+
+    default-column-width {
+        fixed 375
+    }
+
+    default-window-height {
+        fixed 210
+    }
+
+    default-floating-position x=15 y=15 relative-to="bottom-right"
+}

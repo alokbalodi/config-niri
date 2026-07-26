@@ -1,0 +1,38 @@
+window {
+    background: alpha(#1e1e2e, 0.82);
+    border-radius: 12px;
+    border: 1px solid alpha(#cdd6f4, 0.06);
+    padding: 2px 8px;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+}
+
+image {
+    color: #cdd6f4;
+    margin-right: 6px;
+    -gtk-icon-transform: scale(1.05);
+}
+
+label {
+    color: #cdd6f4;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: "JetBrainsMono Nerd Font";
+    margin-left: 6px;
+}
+
+progressbar {
+    min-height: 7px;
+    min-width: 75px;
+    border-radius: 999px;
+    background: alpha(#cdd6f4, 0.08);
+}
+
+progress {
+    min-height: 7px;
+    border-radius: 999px;
+    background: #89b4fa;
+}

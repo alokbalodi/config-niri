@@ -1,0 +1,19 @@
+//
+// Recent Windows
+//
+
+recent-windows {
+
+    binds {
+
+        // Recent Current Workspace
+        Mod+Tab {
+            next-window scope="workspace";
+        }
+
+        // Recent All Workspaces
+        Alt+Tab {
+            next-window scope="all";
+        }
+    }
+}

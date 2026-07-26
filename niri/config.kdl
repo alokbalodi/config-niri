@@ -1,0 +1,47 @@
+// =====================================================
+// Niri Configuration
+// =====================================================
+
+// =====================================================
+// Core
+// =====================================================
+
+include "./configs/input.kdl"
+include "./configs/monitors.kdl"
+include "./configs/workspaces.kdl"
+include "./configs/layouts.kdl"
+include "./configs/appearance.kdl"
+include "./configs/animations.kdl"
+include "./configs/misc.kdl"
+
+// =====================================================
+// Rules
+// =====================================================
+
+include "./rules/general.kdl"
+include "./rules/dialogs.kdl"
+include "./rules/workspaces.kdl"
+include "./rules/media.kdl"
+include "./rules/utilities.kdl"
+
+// =====================================================
+// Startup
+// =====================================================
+
+include "./startup/apps.kdl"
+include "./startup/clipboard.kdl"
+include "./startup/wallpaper.kdl"
+
+// =====================================================
+// Keybindings
+// =====================================================
+
+include "./binds/apps.kdl"
+include "./binds/windows.kdl"
+include "./binds/recent-windows.kdl"
+include "./binds/workspaces.kdl"
+include "./binds/media.kdl"
+include "./binds/networking.kdl"
+include "./binds/power.kdl"
+include "./binds/clipboard.kdl"
+include "./binds/screenshots.kdl"

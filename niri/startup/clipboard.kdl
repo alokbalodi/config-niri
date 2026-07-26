@@ -1,0 +1,6 @@
+// =====================================================
+// Clipboard History
+// =====================================================
+
+// Store clipboard history using cliphist.
+spawn-at-startup "wl-paste" "--watch" "cliphist" "store"

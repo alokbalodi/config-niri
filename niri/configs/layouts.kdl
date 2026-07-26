@@ -1,0 +1,65 @@
+layout {
+
+    // =====================================================
+    // Layout
+    // =====================================================
+
+    always-center-single-column
+    background-color "transparent"
+
+    default-column-width {
+        proportion 0.7
+    }
+}
+
+cursor {
+    xcursor-theme "macOS"
+    xcursor-size 24
+}
+
+blur {
+
+    // =====================================================
+    // Blur
+    // =====================================================
+
+    passes 2
+    offset 3.0
+    noise 0.02
+    saturation 1.0
+}
+
+// =====================================================
+// Layer Effects
+// =====================================================
+
+layer-rule {
+    background-effect {
+        blur true
+    }
+}
+
+// =====================================================
+// Blur Exceptions
+// =====================================================
+
+layer-rule {
+    match namespace="notifications"
+    match namespace="selection"
+    match namespace="swayosd"
+    match namespace="waybar"
+
+    background-effect {
+        blur false
+    }
+}
+
+// =====================================================
+// Wallpaper
+// =====================================================
+
+layer-rule {
+    match namespace="awww-daemon"
+
+    place-within-backdrop true
+}

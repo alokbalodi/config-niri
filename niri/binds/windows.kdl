@@ -1,0 +1,108 @@
+binds {
+
+    //
+    // Window Management
+    //
+
+    // Close Window
+    Mod+C { close-window; }
+
+    // Toggle Floating
+    Mod+V { toggle-window-floating; }
+
+    // Fullscreen
+    Mod+F { fullscreen-window; }
+
+    // Terminal
+    Mod+Grave {
+        focus-workspace "terminal";
+    }
+
+    //
+    // Column Navigation
+    //
+
+    // Focus Previous Column
+    Mod+Left { focus-column-left; }
+
+    // Focus Next Column
+    Mod+Right { focus-column-right; }
+
+    //
+    // Workspace Navigation
+    //
+
+    // Previous Workspace
+    Mod+Up { focus-workspace-up; }
+
+    // Next Workspace
+    Mod+Down { focus-workspace-down; }
+
+    //
+    // Column Movement
+    //
+
+    // Move Column Left
+    Mod+Shift+Left { move-column-left; }
+
+    // Move Column Right
+    Mod+Shift+Right { move-column-right; }
+
+    // Move Column to Previous Workspace
+    Mod+Shift+Up { move-column-to-workspace-up; }
+
+    // Move Column to Next Workspace
+    Mod+Shift+Down { move-column-to-workspace-down; }
+
+    //
+    // Column Layout
+    //
+
+    // Center Current Column
+    Mod+P { center-column; }
+
+    // Maximize Column
+    Mod+M { maximize-column; }
+
+    // Maximize Window
+    Mod+Shift+M { maximize-window-to-edges; }
+
+    // Toggle Tabbed Column
+    Mod+J { toggle-column-tabbed-display; }
+
+    // Toggle vertical grouping with the left column.
+    Mod+BracketLeft {
+        consume-or-expel-window-left;
+    }
+
+    // Toggle vertical grouping with the right column.
+    Mod+BracketRight {
+        consume-or-expel-window-right;
+    }
+
+    // Cycle Column Width
+    Mod+R { switch-preset-column-width; }
+
+    //
+    // Utilities
+    //
+
+    // Dismiss Notifications
+    Ctrl+grave {
+        spawn "makoctl" "dismiss" "--all";
+    }
+
+    // Toggle Waybar
+    Mod+Shift+W {
+        spawn-sh "systemctl --user --quiet is-active waybar.service && systemctl --user stop waybar.service || systemctl --user start waybar.service";
+    }
+
+    //
+    // Niri
+    //
+
+    // Reload Niri Configuration
+    Mod+Shift+R {
+        spawn-sh "if niri msg action load-config-file; then notify-send 'Niri' 'Configuration reloaded successfully' -i preferences-system; else notify-send 'Niri' 'Configuration reload failed' -i dialog-error; fi";
+    }
+}

@@ -1,0 +1,22 @@
+{1}          !!XX!i<
+{1}         !|czzzzz1i
+{1}        !icccczzzzzci!
+{2}        iiccccczzzzzzz!
+{2}        iiccccccczzzzzzzi
+{2}        iivvcccccccczzzzzji
+{3}        iivvvvvvccccccczzzzi
+{3}        i!vvvvvvvvccccccczzzi
+{3}        !>vvvvvciiiiicccccczzi
+{4}        i-uuvvvi    ii!cccccz!
+{4}        i}uuuuv!      iiccccc1!
+{4}        i<uuuuui       itcccc!!
+{5}        iiuuuuui       i]vvvci
+{5}        li(nnnui      !ivvvvii
+{5}         !iinnnni    !iuvvv!i
+{6}          !ii(ni    !in!ii
+{6}             !!~a******Ji!
+{6}            ikxnnnnnnnnunn!
+{7}           !ixxxxnnnnnnnnui
+{7}            ii;/xxxxnnnn!li
+{7}            !iiiiiiiiiii>
+{reset}

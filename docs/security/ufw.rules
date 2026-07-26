@@ -1,0 +1,73 @@
+# ============================================================================
+# UFW Firewall Rules
+# ============================================================================
+#
+# Default Policy
+#   Incoming : DENY
+#   Outgoing : ALLOW
+#   Routed   : DENY
+#
+# IPv6
+#   Disabled
+#
+# ============================================================================
+# Active Rules
+# ============================================================================
+
+# None
+
+# ============================================================================
+# LocalSend
+# ============================================================================
+
+# Status : Disabled
+
+# Allow only from LAN.
+#
+# ufw allow in on wlo1 from 192.168.1.0/24 proto tcp to any port <PORT>
+# ufw allow in on wlo1 from 192.168.1.0/24 proto udp to any port <PORT>
+
+# ============================================================================
+# Syncthing
+# ============================================================================
+
+# Status : Disabled
+
+# LAN
+#
+# ufw allow in on wlo1 from 192.168.1.0/24 proto tcp to any port 22000
+# ufw allow in on wlo1 from 192.168.1.0/24 proto udp to any port 21027
+
+# Tailnet
+#
+# ufw allow in on tailscale0 proto tcp to any port 22000
+
+# ============================================================================
+# Immich
+# ============================================================================
+
+# Status : Disabled
+
+# Prefer Tailscale only.
+#
+# ufw allow in on tailscale0 proto tcp to any port <HOST_PORT>
+
+# ============================================================================
+# Podman
+# ============================================================================
+
+# Never create generic Podman rules.
+#
+# Every published host port must be added individually.
+
+# Example
+#
+# ufw allow in on tailscale0 proto tcp to any port <HOST_PORT>
+
+# ============================================================================
+# SSH
+# ============================================================================
+
+# Status : Disabled
+
+# ufw allow in on tailscale0 proto tcp to any port 22

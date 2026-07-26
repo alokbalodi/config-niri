@@ -1,0 +1,98 @@
+binds {
+
+    //
+    // Audio
+    //
+
+    // Volume Up
+    XF86AudioRaiseVolume allow-when-locked=true {
+        spawn "swayosd-client" "--output-volume" "raise";
+    }
+
+    // Volume Down
+    XF86AudioLowerVolume allow-when-locked=true {
+        spawn "swayosd-client" "--output-volume" "lower";
+    }
+
+    // Toggle Mute
+    XF86AudioMute allow-when-locked=true {
+        spawn "swayosd-client" "--output-volume" "mute-toggle";
+    }
+
+    // Toggle Microphone Mute
+    XF86AudioMicMute allow-when-locked=true {
+        spawn "swayosd-client" "--input-volume" "mute-toggle";
+    }
+
+    //
+    // Media Playback
+    //
+
+    // Play / Pause
+    XF86AudioPlay allow-when-locked=true {
+        spawn "playerctl" "play-pause";
+    }
+
+    // Pause
+    XF86AudioPause allow-when-locked=true {
+        spawn "playerctl" "play-pause";
+    }
+
+    // Next Track
+    XF86AudioNext allow-when-locked=true {
+        spawn "playerctl" "next";
+    }
+
+    // Previous Track
+    XF86AudioPrev allow-when-locked=true {
+        spawn "playerctl" "previous";
+    }
+
+    //
+    // Display
+    //
+
+    // Brightness Up
+    XF86MonBrightnessUp allow-when-locked=true {
+        spawn "swayosd-client" "--brightness" "raise";
+    }
+
+    // Brightness Down
+    XF86MonBrightnessDown allow-when-locked=true {
+        spawn "swayosd-client" "--brightness" "lower";
+    }
+
+    //
+    // Laptop Function Keys
+    //
+
+    // Brightness Up
+    F4 {
+        spawn "swayosd-client" "--brightness" "raise";
+    }
+
+    // Brightness Down
+    F3 {
+        spawn "swayosd-client" "--brightness" "lower";
+    }
+
+    // Volume Up
+    F8 {
+        spawn "swayosd-client" "--output-volume" "raise";
+    }
+
+    // Volume Down
+    F7 {
+        spawn "swayosd-client" "--output-volume" "lower";
+    }
+
+    // Toggle Mute
+    F6 {
+        spawn "swayosd-client" "--output-volume" "mute-toggle";
+    }
+
+    // Play / Pause
+    F10 {
+        spawn "playerctl" "play-pause";
+    }
+}

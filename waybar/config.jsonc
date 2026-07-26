@@ -1,0 +1,159 @@
+{
+    "layer": "top",
+    "position": "top",
+    "margin-top": 3,
+    "height": 30,
+    "fixed-center": true,
+
+    "modules-left": [
+      "niri/workspaces",
+      "niri/window"
+    ],
+
+    "modules-center": [
+        "clock"
+    ],
+
+    "modules-right": [
+        "network",
+        "pulseaudio",
+        "bluetooth",
+        "backlight#custom",
+        "disk",
+        "custom/dns",
+        "battery"
+    ],
+
+    "custom/dns": {
+        "exec": "~/.config/waybar/dns-status.sh",
+        "interval": 5,
+        "tooltip": false
+    },
+
+    "niri/workspaces": {
+        "format": "{icon}",
+        "format-icons": {
+            "browser": "󰖟",
+            "files": "",
+            "media": "󰎆",
+            "misc": "󰒓",
+            "terminal": "",
+
+            "focused": "󰮯",
+            "active": "",
+            "empty": "",
+            "default": "󰣇"
+        },
+        "on-click": "activate",
+        "all-outputs": false
+    },
+
+    "niri/window": {
+        "format": "{app_id}",
+        "tooltip": false
+    },
+
+    "clock": {
+        "format": "{:%I:%M %p | %a %d-%m-%Y}",
+        "tooltip": false
+    },
+
+    "network": {
+        "interval": 2,
+
+        "format-wifi": "󰤨 ",
+
+        "format-ethernet": "󰈀",
+
+        "format-disconnected": "󰤭 ",
+
+        "tooltip": true,
+
+        "tooltip-format-wifi": "{essid}\nSignal: {signalStrength}%\nIP: {ipaddr}",
+
+        "tooltip-format-ethernet": "LAN",
+
+        "tooltip-format-disconnected": "Disconnected",
+
+        "on-click": "nm-connection-editor"
+    },
+
+    "pulseaudio": {
+        "format": "󰕾",
+        "format-muted": "󰸈",
+
+        "tooltip": true,
+        "tooltip-format": "{volume}%",
+
+        "on-click": "pavucontrol",
+
+        "on-scroll-up": "swayosd-client --output-volume raise",
+
+        "on-scroll-down": "swayosd-client --output-volume lower"
+    },
+
+    "bluetooth": {
+    "format": "{icon}",
+    "format-icons": {
+        "disabled": "󰂲",
+        "off": "󰂲",
+        "on": "󰂯",
+        "connected": "󰂱"
+    },
+
+    "tooltip": true,
+    "tooltip-format": "{device_alias}",
+    "tooltip-format-connected": "{device_alias}",
+    "tooltip-format-disabled": "Bluetooth off",
+
+    "on-click": "blueman-manager"
+    },
+
+    "disk": {
+        "interval": 30,
+
+        "format": "󰋊 {percentage_used}%",
+
+        "tooltip": true,
+
+        "tooltip-format": "Disk: {used} / {total}\nFree: {free}"
+    },
+
+    "backlight#custom": {
+        "device": "amdgpu_bl1",
+
+        "format": "󰌵",
+
+        "tooltip": true,
+
+        "tooltip-format": "Brightness: {percent}%",
+
+        "on-scroll-up": "brightnessctl set +5%",
+
+        "on-scroll-down": "brightnessctl set 5%-"
+    },
+
+    "battery": {
+        "interval": 30,
+
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+
+        "format": "󰁹 {capacity}%",
+
+        "format-charging": "󰂄 {capacity}%",
+
+        "format-discharging": "󰂃 {capacity}%",
+
+        "format-warning": "󰁻 {capacity}%",
+
+        "format-critical": "󰁺 {capacity}%",
+
+        "tooltip": true,
+
+        "tooltip-format": "Battery: {capacity}%\nState: {timeTo}\nPower: {power}W\nHealth: {health}%"
+    }
+}

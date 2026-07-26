@@ -1,0 +1,8 @@
+//
+// Hotkey Overlay
+// =====================================================
+
+hotkey-overlay {
+    // Do not display the built-in hotkey overlay when Niri starts.
+    skip-at-startup
+}

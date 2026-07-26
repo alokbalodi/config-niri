@@ -1,0 +1,16 @@
+binds {
+
+    //
+    // Clipboard
+    //
+
+    // Clipboard History (Rofi)
+    Alt+V {
+        spawn "~/.config/niri/scripts/clipboard/cliphist-rofi.sh";
+    }
+
+    // Clear Clipboard
+    Ctrl+Alt+C {
+        spawn "~/.config/niri/scripts/clipboard/cliphist-clear.sh";
+    }
+}

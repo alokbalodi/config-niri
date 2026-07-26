@@ -1,0 +1,10 @@
+// =====================================================
+// Named Workspaces
+// =====================================================
+
+// Persistent workspace names used throughout the configuration.
+workspace "browser"
+workspace "files"
+workspace "media"
+workspace "terminal"
+workspace "downloads"

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+<action>
+	<icon>kitty</icon>
+	<name>Open Terminal Here</name>
+	<submenu></submenu>
+	<unique-id>1778078587569360-1</unique-id>
+	<command>/usr/bin/kitty %f</command>
+	<description>Kitty</description>
+	<range></range>
+	<patterns>*</patterns>
+	<startup-notify/>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+<action>
+	<icon>localsend</icon>
+	<name>LocalSend</name>
+	<submenu></submenu>
+	<unique-id>1779855272002745-1</unique-id>
+	<command>/usr/bin/localsend %f</command>
+	<description>Send files on the fly.</description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Open Thunar as Root</name>
+	<submenu></submenu>
+	<unique-id>1780639714640071-1</unique-id>
+	<command>/home/alokkk/.config/niri/scripts/root-thunar.sh %f</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<startup-notify/>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+</actions>

@@ -1,0 +1,208 @@
+* {
+    font-family: "JetBrainsMono Nerd Font", sans-serif;
+    font-size: 18px;
+
+    padding: 0;
+    margin: 0;
+}
+
+window#waybar {
+    background: transparent;
+    border: none;
+
+    color: #cdd6f4;
+}
+
+
+/* =========================================================
+   Shared Floating Pills
+   ========================================================= */
+
+#workspaces,
+#clock,
+#custom-dns,
+#network,
+#pulseaudio,
+#bluetooth,
+#cpu,
+#memory,
+#disk,
+#backlight,
+#battery {
+    background: rgba(24, 24, 37, 0.6);
+
+    border: 1px solid rgba(255, 255, 255, 0.04);
+
+    border-radius: 12px;
+
+    margin: 4px 3px;
+
+    padding: 2px 14px;
+
+    min-height: 28px;
+
+    font-weight: 600;
+}
+
+/* =========================================================
+   Workspaces
+   ========================================================= */
+
+#workspaces {
+    padding: 2px 6px;
+}
+
+#workspaces button {
+    color: #cdd6f4;
+
+    background: rgba(255,255,255,0.03);
+
+    border: none;
+    box-shadow: none;
+
+    border-radius: 10px;
+
+    margin: 3px 2px;
+
+    padding: 0 10px;
+
+    min-width: 24px;
+
+   transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#workspaces button.active {
+    color: #cdd6f4;
+
+    background: rgba(137, 180, 250, 0.18);
+}
+
+#workspaces button:hover {
+    color: #cdd6f4;
+
+    background: rgba(255,255,255,0.06);
+}
+
+/* =========================================================
+   Window Title
+   ========================================================= */
+
+#window {
+    background: rgba(30, 30, 46, 0.6);
+
+    border: 1px solid rgba(255,255,255,0.05);
+
+    border-radius: 12px;
+
+    margin: 4px 3px;
+
+    padding: 2px 14px;
+
+    color: #cdd6f4;
+
+    font-weight: 700;
+}
+
+/* =========================================================
+   Clock
+   ========================================================= */
+
+#clock {
+    color: #cdd6f4;
+}
+
+/* =========================================================
+   Network
+   ========================================================= */
+
+#custom-dns {
+    color: #cdd6f4;
+}
+
+#network {
+    color: #cdd6f4;
+}
+
+/* =========================================================
+   Audio + Bluetooth
+   ========================================================= */
+
+#pulseaudio {
+    color: #cdd6f4;
+}
+
+#pulseaudio.muted {
+    color: #cdd6f4;
+}
+
+#bluetooth {
+    color: #cdd6f4;
+}
+
+#bluetooth.disabled {
+    color: #cdd6f4;
+}
+
+/* =========================================================
+   System
+   ========================================================= */
+
+#disk {
+    color: #cdd6f4;
+}
+
+/* =========================================================
+   Brightness + Battery
+   ========================================================= */
+
+#backlight {
+    color: #cdd6f4;
+}
+
+#battery {
+    color: #cdd6f4;
+}
+
+#battery.charging {
+    color: #cdd6f4;
+}
+
+#battery.warning:not(.charging) {
+    color: #f9e2af;
+}
+
+#battery.critical:not(.charging) {
+    color: #f38ba8;
+
+    animation: blink 1s step-start infinite;
+}
+
+/* =========================================================
+   Animation
+   ========================================================= */
+
+@keyframes blink {
+    50% {
+        opacity: 0.4;
+    }
+}
+
+/* =========================================================
+   Tooltips
+   ========================================================= */
+
+tooltip {
+    background: rgba(24, 24, 37, 0.4);
+
+    border: 1px solid rgba(255,255,255,0.06);
+
+    border-radius: 5px;
+
+    padding: 8px;
+}
+
+tooltip label {
+    color: #cdd6f4;
+
+    padding: 4px 6px;
+}

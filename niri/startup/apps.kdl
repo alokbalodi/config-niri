@@ -1,0 +1,14 @@
+// =====================================================
+// Session Initialization
+// =====================================================
+
+// Run one-time setup tasks for the session.
+spawn-at-startup "~/.config/niri/scripts/network/ip-update.sh"
+
+// =====================================================
+// Applications
+// =====================================================
+
+// Launch default applications after session settles.
+spawn-at-startup "sh" "-c" "sleep 3; kitty"
+spawn-at-startup "sh" "-c" "sleep 5; firefox"

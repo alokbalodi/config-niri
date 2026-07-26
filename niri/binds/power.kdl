@@ -1,0 +1,35 @@
+binds {
+
+    //
+    // Session
+    //
+
+    // Lock Screen
+    Mod+L {
+        spawn "~/.config/niri/scripts/lock-screen";
+    }
+
+    // Toggle Auto Lock
+    Mod+F12 {
+        spawn "~/.config/niri/scripts/idle-toggle.sh";
+    }
+
+    // Logout / Shutdown Menu
+    Ctrl+F4 {
+        spawn "wlogout";
+    }
+
+    //
+    // Power Profiles
+    //
+
+    // Power Saver
+    Mod+Ctrl+P {
+        spawn "powerprofilesctl" "set" "power-saver";
+    }
+
+    // Balanced
+    Mod+Ctrl+B {
+        spawn "powerprofilesctl" "set" "balanced";
+    }
+}

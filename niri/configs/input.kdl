@@ -1,0 +1,58 @@
+input {
+
+    // =====================================================
+    // Keyboard
+    // =====================================================
+
+    keyboard {
+        xkb {
+            layout "us"
+        }
+
+        numlock
+    }
+
+    // =====================================================
+    // Touchpad
+    // =====================================================
+
+    touchpad {
+        // Tap instead of physically clicking
+        tap
+
+        // Tap-and-drag
+        drag true
+        drag-lock
+
+        // Two-finger scrolling
+        natural-scroll
+
+        // Disable touchpad while typing
+        dwt
+
+        // 2-finger tap = right click
+        // 3-finger tap = middle click
+        tap-button-map "left-right-middle"
+
+        // Physical click with two fingers instead of the bottom-right corner
+        click-method "clickfinger"
+    }
+
+    // =====================================================
+    // Mouse
+    // =====================================================
+
+    mouse {
+        accel-speed 0.0
+    }
+
+    // =====================================================
+    // Focus & Navigation
+    // =====================================================
+
+    // Focus windows when the pointer enters them
+    focus-follows-mouse
+
+    // Return to the previous workspace when switching to the current one
+    workspace-auto-back-and-forth
+}

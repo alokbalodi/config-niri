@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+exec hyprlock -c "$HOME/.config/niri/services/lock.conf"

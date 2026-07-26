@@ -1,0 +1,39 @@
+binds {
+
+    //
+    // DNS
+    //
+
+    // DNS Menu
+    Mod+D {
+        spawn "bash" "-c" "$HOME/.config/niri/scripts/network/dns-menu.sh";
+    }
+
+    //
+    // VPN
+    //
+
+    // VPN Menu
+    Mod+X {
+        spawn "~/.config/niri/scripts/network/vpn-menu.sh";
+    }
+
+    //
+    // Network Toggles
+    //
+
+    // Toggle Airplane Mode
+    Ctrl+Alt+A {
+        spawn "~/.config/niri/scripts/network/airplane-toggle.sh";
+    }
+
+    // Toggle Bluetooth
+    Ctrl+Alt+B {
+        spawn "~/.config/niri/scripts/network/bluetooth-toggle.sh";
+    }
+
+    // Toggle Wi-Fi
+    Ctrl+Alt+W {
+        spawn "~/.config/niri/scripts/network/wifi-toggle.sh";
+    }
+}

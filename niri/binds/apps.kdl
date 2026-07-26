@@ -1,0 +1,40 @@
+binds {
+
+    //
+    // Applications
+    //
+
+    // Terminal
+    Alt+T { spawn "kitty"; }
+
+    // File Manager
+    Mod+E { spawn "thunar"; }
+
+    // Application Launcher
+    Alt+Space {
+        spawn "rofi" "-show" "drun" "-theme" "~/.config/rofi/config.rasi";
+    }
+
+    // Web Browser
+    Mod+B { spawn "firefox"; }
+
+    // Password Manager
+    Ctrl+B { spawn "bitwarden-desktop"; }
+
+    //
+    // Utilities
+    //
+
+    // Wallpaper Manager
+    Mod+W { spawn "waypaper"; }
+
+    // File Search
+    Mod+Space {
+        spawn "kitty" "--title" "filesearch" "--class" "filesearch" "-e" "/home/alokkk/.config/niri/scripts/filesearch.sh";
+    }
+
+    // Keybind Cheatsheet
+    Mod+Slash {
+        spawn "~/.config/niri/scripts/keybind/keybind-cheatsheet.sh";
+    }
+}

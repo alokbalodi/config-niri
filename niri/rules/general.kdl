@@ -1,0 +1,22 @@
+// =====================================================
+// Client-side Decorations
+// =====================================================
+
+// Prefer server-side decorations when supported.
+prefer-no-csd
+
+// =====================================================
+// Global Window Defaults
+// =====================================================
+
+window-rule {
+
+    geometry-corner-radius 12
+
+    clip-to-geometry true
+
+    background-effect {
+        blur true
+        xray true
+    }
+}

@@ -1,0 +1,6 @@
+// =====================================================
+// Wallpaper
+// =====================================================
+
+// Restore the previously selected wallpaper.
+spawn-at-startup "waypaper" "--restore"

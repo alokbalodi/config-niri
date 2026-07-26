@@ -1,0 +1,17 @@
+binds {
+
+    //
+    // Screenshots
+    //
+
+    // Region Screenshot → Save + Clipboard + Swappy
+    Insert {
+        spawn "~/.config/niri/scripts/screenshot/screenshot-region";
+    }
+
+    // Fullscreen Screenshot → Save + Clipboard + Swappy
+    Mod+Insert {
+        spawn "~/.config/niri/scripts/screenshot/screenshot-full";
+    }
+
+}

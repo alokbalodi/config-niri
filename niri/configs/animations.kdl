@@ -1,0 +1,6 @@
+animations {
+
+    // Global animation speed multiplier.
+    // Increase for slower animations, decrease for faster ones.
+    slowdown 2.5
+}
