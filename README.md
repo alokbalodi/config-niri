@@ -37,9 +37,16 @@ This repository contains the configuration, scripts, and documentation required 
 ## Repository Structure
 
 ```text
-.config
+~/.config
+├── .gitignore
+├── README.md
+├── Kvantum/
+├── Thunar/
+├── background/
+├── btop/
 ├── docs/
-├── fastfetch/
+├── environment.d/
+├── fetch/
 ├── fish/
 ├── fontconfig/
 ├── gtk-3.0/
@@ -50,16 +57,16 @@ This repository contains the configuration, scripts, and documentation required 
 ├── mpv/
 ├── niri/
 ├── nvim/
+├── qimgv/
 ├── qt5ct/
 ├── qt6ct/
 ├── rofi/
 ├── swayosd/
-├── Thunar/
 ├── tmux/
 ├── waybar/
 ├── wlogout/
-├── yazi/
-└── README.md
+├── xdg-desktop-portal/
+└── yazi/
 ```
 
 ---
