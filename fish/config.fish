@@ -8,6 +8,8 @@ if status is-interactive
     end
 end
 
+fish_add_path ~/Mains/apps/UAD
+
 set -gx EDITOR nvim
 set -gx VISUAL nvim
 

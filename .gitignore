@@ -40,6 +40,8 @@ onlyoffice/
 VirtualBox/
 audacity/
 qpdfview/
+htop/
+rncbc.org/
 
 # Machine-specific / generated state
 QtProject.conf
