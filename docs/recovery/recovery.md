@@ -77,7 +77,7 @@ Verify the system before considering the installation complete.
 - Neovim starts correctly.
 - Thunar opens.
 - Screenshot utilities function.
-- Rofi menus work.
+- Fuzzel menus work.
 
 ## Appearance
 
@@ -95,7 +95,7 @@ Recovery is intentionally divided into independent layers.
 
 | Component | Recovery Method |
 | --------- | --------------- |
-| Operating system | Timeshift |
+| Operating system | Btrfs + Snapper |
 | Dotfiles | Git repository |
 | Personal files | File backups / Syncthing |
 | Containers | Podman recovery documentation |
@@ -104,41 +104,19 @@ Each layer can be restored independently.
 
 ---
 
-# Timeshift
+# Snapshot Strategy
 
-Timeshift provides local operating system snapshots.
+Snapper manages snapshots stored on the Btrfs filesystem.
 
-**Mode:** RSYNC
+**Mode:** Btrfs
 
 **Purpose:** Operating system recovery
 
-Timeshift protects the operating system.
+Snapper snapshots protect the operating system.
 
 The Git repository protects configuration.
 
 These complement one another and should both be maintained.
-
----
-
-## Initial Setup
-
-Install Timeshift.
-
-```bash
-sudo pacman -S timeshift
-```
-
-Launch the setup wizard.
-
-```bash
-sudo timeshift-launcher
-```
-
-Configure:
-
-- Snapshot mode: **RSYNC**
-- Snapshot destination
-- Automatic schedule
 
 ---
 
@@ -159,7 +137,7 @@ Configure:
 Before major upgrades or configuration changes:
 
 ```bash
-sudo timeshift --create --comments "before <change>"
+sudo snapper create --description "before <change>"
 ```
 
 ---
@@ -172,7 +150,7 @@ sudo timeshift --restore
 
 ---
 
-## Timeshift Includes
+## Snapshots Cover
 
 - Installed packages
 - System configuration
@@ -182,7 +160,7 @@ sudo timeshift --restore
 
 ---
 
-## Timeshift Does Not Include
+## Snapshots Do Not Cover
 
 - Home directory (`~`) using the default configuration
 - Git repository
@@ -201,7 +179,7 @@ These should be restored from their respective backups if required.
 
 The repository is designed so that recovery consists of rebuilding independent layers rather than restoring one monolithic backup.
 
-1. Restore the operating system with Timeshift if required.
+1. Restore the operating system from a Snapper snapshot if required.
 2. Restore the configuration repository from Git.
 3. Restore personal files from backups.
 4. Restore Podman applications using the documentation in `docs/podman-recovery/`.

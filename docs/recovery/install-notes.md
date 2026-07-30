@@ -46,10 +46,6 @@ Configuration:
 ~/.config/niri
 ```
 
-Shared scripts and resources:
-
-```text
-~/.config/shared
 ```
 
 ---
@@ -77,7 +73,7 @@ Tela-circle-dark
 Cursor
 
 ```text
-Bibata-Modern-Ice
+MacOs Cursor
 ```
 
 ---
@@ -87,7 +83,7 @@ Bibata-Modern-Ice
 DNS helper scripts are located in:
 
 ```text
-~/.config/shared/scripts/network/
+~/.config/niri/scripts/network/
 ```
 
 Review the available profiles before changing the active DNS configuration.
@@ -96,9 +92,9 @@ Review the available profiles before changing the active DNS configuration.
 
 # Launchers
 
-## Rofi
+## Fuzzel
 
-Rofi is used for:
+Fuzzel is used for:
 
 - Application launcher
 - Clipboard history
