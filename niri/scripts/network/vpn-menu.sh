@@ -29,10 +29,9 @@ MENU=$(
 
 CHOICE=$(
   printf "%s\n" "$MENU" |
-    rofi \
-      -dmenu \
-      -i \
-      -p "VPN"
+    fuzzel \
+      --dmenu \
+      --prompt "VPN> "
 )
 
 [[ -z "$CHOICE" ]] && exit 0

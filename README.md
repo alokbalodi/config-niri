@@ -28,7 +28,7 @@ This repository contains the configuration, scripts, and documentation required 
 | Editor | Neovim |
 | Status Bar | Waybar |
 | Notifications | Mako |
-| Launcher | Rofi |
+| Launcher | Fuzzel |
 | Theme | Catppuccin Mocha |
 | Containers | Rootless Podman |
 
@@ -49,6 +49,7 @@ This repository contains the configuration, scripts, and documentation required 
 ├── fetch/
 ├── fish/
 ├── fontconfig/
+├── fuzzel/
 ├── gtk-3.0/
 ├── gtk-4.0/
 ├── keepassxc/

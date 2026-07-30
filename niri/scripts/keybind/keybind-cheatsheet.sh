@@ -16,9 +16,7 @@ notify-send \
   "$count bindings loaded" \
   -t 2000
 
-printf '%s\n' "$binds" | rofi \
-  -dmenu \
-  -i \
-  -p "Keybinds" \
-  -no-custom \
-  -format i
+printf '%s\n' "$binds" |
+  fuzzel \
+    --dmenu \
+    --prompt "Keybinds> "

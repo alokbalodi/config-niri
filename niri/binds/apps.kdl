@@ -12,7 +12,7 @@ binds {
 
     // Application Launcher
     Alt+Space {
-        spawn "rofi" "-show" "drun" "-theme" "~/.config/rofi/config.rasi";
+        spawn "fuzzel";
     }
 
     // Web Browser

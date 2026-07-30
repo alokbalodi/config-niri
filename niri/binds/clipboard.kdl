@@ -6,7 +6,7 @@ binds {
 
     // Clipboard History (Rofi)
     Alt+V {
-        spawn "~/.config/niri/scripts/clipboard/cliphist-rofi.sh";
+        spawn "~/.config/niri/scripts/clipboard/cliphist-history.sh";
     }
 
     // Clear Clipboard

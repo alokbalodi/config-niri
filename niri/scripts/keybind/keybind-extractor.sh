@@ -53,7 +53,7 @@ parse_file() {
             next
 
         if (label != "")
-            printf "%-35s -> %s\n", line, label
+            printf "%-24s -> %s\n", line, label
     }
     ' "$file"
 }

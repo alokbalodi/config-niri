@@ -3,9 +3,8 @@
 set -euo pipefail
 
 cliphist list |
-  rofi \
-    -dmenu \
-    -i \
-    -p "Clipboard" |
+  fuzzel \
+    --dmenu \
+    --prompt "Clipboard> " |
   cliphist decode |
   wl-copy

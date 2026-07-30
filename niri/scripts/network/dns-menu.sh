@@ -7,10 +7,9 @@ CHOICE=$(
     "Alokkk" \
     "Work" \
     "Cloudflare" |
-    rofi \
-      -dmenu \
-      -i \
-      -p "DNS"
+    fuzzel \
+      --dmenu \
+      --prompt "DNS> "
 )
 
 [[ -z "$CHOICE" ]] && exit 0

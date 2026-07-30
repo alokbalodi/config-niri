@@ -80,9 +80,6 @@ binds {
         consume-or-expel-window-right;
     }
 
-    // Cycle Column Width
-    Mod+R { switch-preset-column-width; }
-
     //
     // Utilities
     //

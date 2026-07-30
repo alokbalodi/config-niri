@@ -6,10 +6,9 @@ CHOICE=$(
   printf "%s\n" \
     "Laptop" \
     "TV" |
-    rofi \
-      -dmenu \
-      -i \
-      -p "Monitor"
+    fuzzel \
+      --dmenu \
+      --prompt "Monitor> "
 )
 
 [[ -z "$CHOICE" ]] && exit 0
