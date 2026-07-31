@@ -154,6 +154,6 @@
 
         "tooltip": true,
 
-        "tooltip-format": "Battery: {capacity}%\nState: {timeTo}\nPower: {power}W\nHealth: {health}%"
+        "tooltip-format": "Battery: {capacity}%\nState: {timeTo}\nPower: {power}W"
     }
 }

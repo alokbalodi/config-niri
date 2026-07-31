@@ -1,0 +1,14 @@
+[Unit]
+Description=Mako Notification Daemon
+Documentation=https://github.com/emersion/mako
+PartOf=graphical-session.target
+After=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/mako
+Restart=on-failure
+RestartSec=2
+
+[Install]
+WantedBy=default.target

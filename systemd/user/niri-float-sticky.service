@@ -1,0 +1,12 @@
+[Unit]
+Description=Keep Firefox Picture-in-Picture sticky across Niri workspaces
+After=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/niri-float-sticky -title "Picture-in-Picture"
+Restart=on-failure
+RestartSec=2
+
+[Install]
+WantedBy=graphical-session.target

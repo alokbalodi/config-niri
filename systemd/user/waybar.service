@@ -1,0 +1,14 @@
+[Unit]
+Description=Waybar Status Bar
+PartOf=graphical-session.target
+After=graphical-session.target swayosd.service
+Requires=swayosd.service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/waybar
+Restart=on-failure
+RestartSec=2
+
+[Install]
+WantedBy=default.target

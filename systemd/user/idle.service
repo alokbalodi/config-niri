@@ -1,0 +1,18 @@
+[Unit]
+Description=Wayland Idle Manager
+PartOf=graphical-session.target
+After=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/swayidle -w \
+    timeout 300 '~/.config/niri/scripts/lock-screen' \
+    timeout 600 'niri msg action power-off-monitors' resume 'niri msg action power-on-monitors' \
+    timeout 1200 'systemctl suspend' \
+    before-sleep '~/.config/niri/scripts/lock-screen' \
+    after-resume 'niri msg action power-on-monitors'
+Restart=on-failure
+RestartSec=2
+
+[Install]
+WantedBy=default.target
