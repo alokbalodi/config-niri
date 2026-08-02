@@ -61,13 +61,10 @@ This repository contains the configuration, scripts, and documentation required 
 ├── qimgv/
 ├── qt5ct/
 ├── qt6ct/
-├── rofi/
 ├── swayosd/
-├── tmux/
 ├── waybar/
 ├── wlogout/
-├── xdg-desktop-portal/
-└── yazi/
+└── xdg-desktop-portal/
 ```
 
 ---

@@ -1,7 +1,0 @@
-[[plugin.deps]]
-use = "yazi-rs/plugins:gvfs"
-rev = "8cd50c6"
-hash = "99aa06d3014798d86001c324468d497f"
-
-[flavor]
-deps = []

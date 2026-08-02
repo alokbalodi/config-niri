@@ -1,8 +1,0 @@
-configuration {
-    font: "JetBrainsMono Nerd Font 14";
-    show-icons: true;
-    disable-history: true;
-    drun-display-format: "{name}";
-}
-
-@theme "theme.rasi"

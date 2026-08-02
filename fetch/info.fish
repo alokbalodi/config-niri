@@ -61,6 +61,7 @@ function system_info
         ' \
         | string replace "x" "×"
     )
+    add_blank
     add_row OS "$os"
     add_row Kernel "$kernel"
     add_row Host "$host"
@@ -72,8 +73,8 @@ function system_info
     add_row Session "$session"
     add_row Shell "$shell"
     add_row Terminal "$terminal"
-    add_row Display "$display"
     add_blank
+    add_row Display "$display"
 end
 
 # -----------------------------
