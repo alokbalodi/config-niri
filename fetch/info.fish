@@ -17,7 +17,34 @@ function system_info
         uptime -p \
         | string replace "up " ""
     )
+    set -l installed (
+        set -l install (date -d "@"(stat -c %W /) +%F)
+        set -l diff (datediff -f '%Y %m %d' $install today)
 
+        set -l years  (string split ' ' $diff)[1]
+        set -l months (string split ' ' $diff)[2]
+        set -l days   (string split ' ' $diff)[3]
+
+        if test $years -gt 0
+            printf "%d year%s" $years (test $years -gt 1; and echo s)
+            if test $months -gt 0
+                printf ", %d month%s" $months (test $months -gt 1; and echo s)
+            end
+            echo
+
+        else if test $months -gt 0
+            set -l weeks (math "floor($days / 7)")
+
+            printf "%d month%s" $months (test $months -gt 1; and echo s)
+            if test $weeks -gt 0
+                printf ", %d week%s" $weeks (test $weeks -gt 1; and echo s)
+            end
+            echo
+
+        else
+            echo "$days day"(test $days -gt 1; and echo s)
+        end
+    )
     set -l packages (count (pacman -Qq))
 
     set -l session "Niri (Wayland)"
@@ -34,12 +61,12 @@ function system_info
         ' \
         | string replace "x" "×"
     )
-    add_blank
     add_row OS "$os"
     add_row Kernel "$kernel"
     add_row Host "$host"
     add_blank
     add_row Uptime "$uptime"
+    add_row Installed "$installed"
     add_row Packages "$packages"
     add_blank
     add_row Session "$session"

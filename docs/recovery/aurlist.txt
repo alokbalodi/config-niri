@@ -1,16 +1,16 @@
-brave-origin-bin 1:1.92.144-1
-catppuccin-gtk-theme-mocha 1.0.3-1
-catppuccin-qt5ct-git r6.cb58530-1
-catppuccin-sddm-theme-mocha 1.1.2-1
-envycontrol 3.5.2-2
-kvantum-theme-catppuccin-git r21.71105d2-1
-localsend-bin 1.17.0-1
-niri-float-sticky 0.0.8-1
-onlyoffice-bin 9.4.0-1
-paru 2.1.0-2
-python-screeninfo 0.8.1-2
-qimgv-git 1.0.2.r190.g3127a2d-1
-rate-mirrors-bin 0.31.0-1
-spotify 1:1.2.92.147-1
-waypaper 2.8-1
-wlogout 1.2.2-0
+brave-origin-bin
+catppuccin-gtk-theme-mocha
+catppuccin-qt5ct-git
+catppuccin-sddm-theme-mocha
+envycontrol
+kvantum-theme-catppuccin-git
+localsend-bin
+niri-float-sticky
+onlyoffice-bin
+paru
+python-screeninfo
+qimgv-git
+rate-mirrors-bin
+spotify
+waypaper
+wlogout
