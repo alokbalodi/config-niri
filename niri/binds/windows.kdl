@@ -94,6 +94,11 @@ binds {
         spawn-sh "systemctl --user --quiet is-active waybar.service && systemctl --user stop waybar.service || systemctl --user start waybar.service";
     }
 
+    // Toggle niri-float-sticky
+    Mod+Shift+P {
+        spawn-sh "systemctl --user --quiet is-active niri-float-sticky.service && { systemctl --user stop niri-float-sticky.service; notify-send 'Niri Float Sticky' 'Stopped'; } || { systemctl --user start niri-float-sticky.service; notify-send 'Niri Float Sticky' 'Started'; }";
+    }
+
     //
     // Niri
     //

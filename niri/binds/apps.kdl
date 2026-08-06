@@ -33,6 +33,11 @@ binds {
         spawn "kitty" "--title" "filesearch" "--class" "filesearch" "-e" "/home/alokkk/.config/niri/scripts/filesearch.sh";
     }
 
+    // IP Update
+    Mod+I {
+        spawn "~/.config/niri/scripts/network/ip-update.sh";
+    }
+
     // Keybind Cheatsheet
     Mod+Slash {
         spawn "~/.config/niri/scripts/keybind/keybind-cheatsheet.sh";

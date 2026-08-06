@@ -5,16 +5,28 @@
     "keybind" : "u"
 }
 {
-    "label": "integrated",
-    "action": "sudo envycontrol -s integrated && notify-send 'GPU set to Integrated, rebooting...' && sleep 2 && systemctl reboot",
-    "text": "Integrated GPU",
-    "keybind": "i"
-}
-{
     "label" : "reboot",
     "action" : "systemctl reboot",
     "text" : "Reboot",
     "keybind" : "r"
+}
+{
+    "label" : "lock",
+    "action" : "/home/alokkk/.config/niri/scripts/lock-screen",
+    "text" : "Lock",
+    "keybind" : ""
+}
+{
+    "label" : "logout",
+    "action" : "niri msg action quit",
+    "text" : "Logout",
+    "keybind" : ""
+}
+{
+    "label": "integrated",
+    "action": "sudo envycontrol -s integrated && notify-send 'GPU set to Integrated, rebooting...' && sleep 2 && systemctl reboot",
+    "text": "Integrated GPU",
+    "keybind": "i"
 }
 {
     "label": "hybrid",
@@ -22,15 +34,4 @@
     "text": "Hybrid GPU",
     "keybind": "h"
 }
-{
-    "label" : "lock",
-    "action" : "true",
-    "text" : "Lock",
-    "keybind" : ""
-}
-{
-    "label" : "logout",
-    "action" : "true",
-    "text" : "Logout",
-    "keybind" : ""
-}
+

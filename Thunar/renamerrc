@@ -4,7 +4,7 @@ LastActiveRenamer=ThunarSbrNumberRenamer
 
 [ThunarSbrNumberRenamer]
 TextMode=THUNAR_SBR_TEXT_MODE_TN
-Text=Yetao
+Text=Never Ending Summer
 Mode=THUNAR_SBR_NUMBER_MODE_010203
-Start=31
+Start=05
 
