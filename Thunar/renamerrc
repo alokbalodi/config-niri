@@ -4,7 +4,7 @@ LastActiveRenamer=ThunarSbrNumberRenamer
 
 [ThunarSbrNumberRenamer]
 TextMode=THUNAR_SBR_TEXT_MODE_TN
-Text=Never Ending Summer
+Text=The Office S09E
 Mode=THUNAR_SBR_NUMBER_MODE_010203
-Start=05
+Start=01
 
