@@ -40,6 +40,7 @@ pavucontrol.ini
 qimgv/qimgv.conf
 qimgv/savedState.conf
 waypaper/config.ini
+Thunar/renamerrc
 
 # Crash reports
 Crashpad/
