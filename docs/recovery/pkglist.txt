@@ -138,6 +138,7 @@ wayland-utils
 wget
 wireplumber
 wl-clipboard
+wmctrl
 wpa_supplicant
 xdg-utils
 xf86-video-amdgpu
