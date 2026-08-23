@@ -13,4 +13,4 @@ FILE=$(
       --preview "bat --color=always {}"
 )
 
-[[ -n "$FILE" ]] && kitty --detach -e nvim "$FILE"
+[[ -n "$FILE" ]] && setsid xdg-open "$FILE" >/dev/null 2>&1

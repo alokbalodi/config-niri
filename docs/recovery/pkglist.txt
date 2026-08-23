@@ -24,6 +24,7 @@ converseen
 dateutils
 dosfstools
 efibootmgr
+evince
 expac
 fd
 file-roller
@@ -146,8 +147,6 @@ xorg-xlsclients
 xorg-xwayland
 xwayland-satellite
 yt-dlp
-zathura
-zathura-pdf-mupdf
 zip
 zoxide
 zram-generator
