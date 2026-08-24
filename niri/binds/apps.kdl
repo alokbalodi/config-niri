@@ -42,4 +42,9 @@ binds {
     Mod+Slash {
         spawn "~/.config/niri/scripts/keybind/keybind-cheatsheet.sh";
     }
+
+    // Toggle Follow Mode
+    Mod+A {
+        spawn "sh" "-c" "nirius toggle-follow-mode && notify-send 'Niri' 'Follow mode toggled'";
+    }
 }

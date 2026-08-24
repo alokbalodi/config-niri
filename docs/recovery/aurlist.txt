@@ -6,6 +6,7 @@ envycontrol
 kvantum-theme-catppuccin-git
 localsend-bin
 niri-float-sticky
+nirius
 onlyoffice-bin
 paru
 python-screeninfo

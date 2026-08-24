@@ -1,0 +1,13 @@
+[Unit]
+Description=Nirius daemon
+Documentation=https://sr.ht/~tsdh/nirius
+After=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/niriusd
+Restart=on-failure
+RestartSec=2
+
+[Install]
+WantedBy=graphical-session.target
