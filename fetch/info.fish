@@ -33,12 +33,12 @@ function system_info
             echo
 
         else if test $months -gt 0
-            set -l weeks (math "floor($days / 7)")
-
             printf "%d month%s" $months (test $months -gt 1; and echo s)
-            if test $weeks -gt 0
-                printf ", %d week%s" $weeks (test $weeks -gt 1; and echo s)
+
+            if test $days -gt 0
+                printf ", %d day%s" $days (test $days -gt 1; and echo s)
             end
+
             echo
 
         else
