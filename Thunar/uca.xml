@@ -7,7 +7,7 @@
 	<unique-id>1778078587569360-1</unique-id>
 	<command>/usr/bin/kitty %f</command>
 	<description>Kitty</description>
-	<range></range>
+	<range>0-1000</range>
 	<patterns>*</patterns>
 	<startup-notify/>
 	<directories/>
@@ -24,7 +24,7 @@
 	<unique-id>1779855272002745-1</unique-id>
 	<command>/usr/bin/localsend %f</command>
 	<description>Send files on the fly.</description>
-	<range>*</range>
+	<range></range>
 	<patterns>*</patterns>
 	<directories/>
 	<audio-files/>

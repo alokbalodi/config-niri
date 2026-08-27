@@ -48,6 +48,7 @@ hyprwayland-scanner
 intel-media-driver
 iotop
 jq
+kid3-qt
 kitty
 kvantum
 kvantum-qt5
