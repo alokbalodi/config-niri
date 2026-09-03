@@ -25,11 +25,11 @@ binds {
 
     // Power Saver
     Mod+Ctrl+P {
-        spawn "powerprofilesctl" "set" "power-saver";
+        spawn "sh" "-c" "powerprofilesctl set power-saver && notify-send 'Power Profile' 'Power Saver enabled'";
     }
 
     // Balanced
     Mod+Ctrl+B {
-        spawn "powerprofilesctl" "set" "balanced";
+        spawn "sh" "-c" "powerprofilesctl set balanced && notify-send 'Power Profile' 'Balanced enabled'";
     }
 }
