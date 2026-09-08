@@ -3,7 +3,7 @@
 // =====================================================
 
 window-rule {
-    match app-id="hyprpolkitagent"
+    match app-id="polkit-gnome-authentication-agent-1"
 
     open-floating true
 
