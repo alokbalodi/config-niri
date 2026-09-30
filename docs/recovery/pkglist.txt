@@ -47,6 +47,7 @@ hyprutils
 hyprwayland-scanner
 intel-media-driver
 iotop
+iw
 jq
 kid3-qt
 kitty
